@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+</head>
+<body>
+    <style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #27272b;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    background: #f1df11;
+  }
+  nav .content-nav {
+    height:10px;
+    display: flex;
+    line-height: 2rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 60%;
+    margin-top: 30px;
+
+  }
+  
+  nav .content-nav ul {
+    display: flex;
+  }
+  .img-nav {
+    width: 125px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px  rgba(13, 13, 13, 0.5);
+    margin-left: 25px;
+}
+
+.img-nav img {
+    max-width: 200%;
+    max-height: 100%;
+}
+  nav .content-nav ul li a {
+    text-decoration: none;
+    color: #030303;
+    text-transform: uppercase;
+    padding: 0 15px;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  
+  nav .content-nav ul li a:hover {
+    color: #fff;
+  }
+  nav .content-nav i{
+    width:25px;
+    height:25px;
+  }
+  .content-nav form {
+    position: relative;
+  }
+  
+  .content-nav form input {
+    border: none;
+    background: #fff;
+    padding: 7px;
+    outline: none;
+    border-radius: 12px;
+    float:right;
+    margin-top: 13px;
+  }
+  
+  .content-nav form button {
+    padding: 5px;
+    border-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    border: none;
+    outline: none;
+    background: #fff;
+    display:none;
+  }
+  
+.content {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color:#eee;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #1319ad;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+    </style>
+   <header>
+    <nav>
+        <div class="img-nav">
+            <img src="images/logodat" alt="" />
+        </div>
+        <div class="content-nav">
+            <ul>
+                <li><a href="trangchu.html">Trang Chủ</a></li>
+                <li><a href="sanpham.html">Sản Phẩm</a></li>
+                <li><a href="lienhe.html">Liên Hệ</a></li>
+                <li><a href="dangnhap.html">Đăng Nhập</a></li>
+            </ul>
+            <form>
+                <input type="text" name="search" placeholder="Tìm kiếm sản phẩm..." />
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </nav>
+</header>
+  <div class="content">
+    <form>
+      <label for="email_phone">Số điện thoại hoặc Email:</label>
+      <input type="text" id="email_phone" name="email_phone" required>
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="button" id="forgot_password">Quên mật khẩu?</button>
+      <input type="submit" value="Đăng nhập">
+      <button type="button" id="register">Đăng kí</button>
+    </form>
+  </div>
+</body>
+</html>
